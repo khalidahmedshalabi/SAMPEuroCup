@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+}
+
+body
+{
+    padding: 0;
+	margin:0;
+    background-image: url('../img/eurobg.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+footer
+{
+    text-align: center;
+    color: #1593BD;
+    height:auto;
+    width:100%;
+    font-family: 'Scope One', serif;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3), 0 6px 20px 20px rgba(0, 0, 0, 0.29);
+
+    background: rgba(240,240,240,1);
+    background: -moz-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,240,240,1)), color-stop(7%, rgba(240,240,240,1)), color-stop(47%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));
+    background: -webkit-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -o-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -ms-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: linear-gradient(to right, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#dedede', GradientType=1 );
+}
+
+.signup_title
+{
+    color:white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 400%;
+}
+
+.signup_form
+{
+    text-align: center;
+    margin: 3%;
+    height:100%;
+    width:75%;
+}
+
+.volume_control
+{
+    cursor: pointer;
+    font-size: 220%;
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.volumeoff
+{
+    display: none;
+}

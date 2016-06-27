@@ -1,0 +1,182 @@
+html, body {
+    height: 100%;
+}
+
+body
+{
+    padding: 0;
+	margin:0;
+    background-image: url('../img/eurobg.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.blurry
+{
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+.header
+{
+    text-align: center;
+    height: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+
+    background: rgba(240,240,240,1);
+    background: -moz-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,240,240,1)), color-stop(7%, rgba(240,240,240,1)), color-stop(47%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));
+    background: -webkit-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -o-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -ms-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: linear-gradient(to right, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#dedede', GradientType=1 );
+}
+
+.header_button
+{
+    color: #109DCC;
+    font-weight: bolder;
+    font-size: 120%;
+    font-family: 'Athiti', sans-serif;
+    cursor: pointer;
+    float: left;
+    width:25%;
+    height:100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_button:hover
+{
+    animation-name: header_button_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header_button_anim
+{
+    to
+    {
+        color:#ffffff;
+        background-color: #1593BD;
+    }
+}
+
+footer
+{
+    text-align: center;
+    color: #1593BD;
+    height:auto;
+    width:100%;
+    font-family: 'Scope One', serif;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3), 0 6px 20px 20px rgba(0, 0, 0, 0.29);
+
+    background: rgba(240,240,240,1);
+    background: -moz-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,240,240,1)), color-stop(7%, rgba(240,240,240,1)), color-stop(47%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));
+    background: -webkit-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -o-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: -ms-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    background: linear-gradient(to right, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 7%, rgba(222,222,222,1) 47%, rgba(222,222,222,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#dedede', GradientType=1 );
+}
+
+.circular_flag
+{
+    border-radius: 50%;
+    font-size: 220%;
+    border-color: #AAAAAA;
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    margin: 2%;
+}
+
+.circular_flag:hover
+{
+    border-color: white;
+}
+
+section
+{
+    display: none;
+}
+
+.section_title
+{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #111111;
+    color: #EEEEEE;
+    font-size: 150%;
+    padding: 1.5%;
+}
+
+.section_body
+{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1%;
+}
+
+.section_content_box
+{
+    font-family: 'Raleway', sans-serif;
+    margin:3%;
+    margin-left: 4%;
+    padding:1%;
+    background-color: white;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3), 0 6px 5px 5px rgba(0, 0, 0, 0.29);
+    border-style: solid;
+    border-width: thin;
+    border-color: #1593BD;
+    height:auto;
+}
+
+.team_roster
+{
+    display: block;
+}
+
+.team_name
+{
+    font-weight: bolder;
+    border-bottom-style: solid;
+    border-bottom-color: #AAAAAA;
+    border-bottom-width: thin;
+}
+
+.team_members
+{
+    margin-left: 4%;
+}
+
+.match_score_container
+{
+    text-align: center;
+    min-height: 100px;
+}
+
+.match_score
+{
+    padding:1%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 130%;
+}
+
+.match_score_team
+{
+    float: left;
+    width:32%;
+    display: inline-block;
+}
