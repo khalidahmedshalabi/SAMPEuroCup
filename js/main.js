@@ -30,9 +30,14 @@ $(".button_stats").click(function(event) {
 	ShowSection(".section_stats");
 });
 
-$(".button_media").click(function(event) {
+$(".button_fans").click(function(event) {
 
-	ShowSection(".section_media");
+	ShowSection(".section_fans");
+});
+
+$(".button_video").click(function(event) {
+
+	ShowSection(".section_video");
 });
 
 
