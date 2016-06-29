@@ -89,6 +89,20 @@ footer
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#dedede', GradientType=1 );
 }
 
+#disqus_thread
+{
+    display:block;
+	text-align:center;
+    font-family: 'Noto Sans', sans-serif;
+	color:white;
+	margin:auto;
+	height:75%;
+	width:75%;
+	overflow-y:auto;
+	overflow-x:hidden;
+	background-color:rgba(11, 11, 11, 0.95);
+}
+
 .circular_flag
 {
     border-radius: 50%;
