@@ -104,8 +104,11 @@ footer
 
 .circular_flag
 {
-    border-radius: 50%;
-    font-size: 220%;
+    background-color: black;
+    text-align: center;
+    border-radius: 50px;
+    width:48px;
+    font-size: 230%;
     border-color: #AAAAAA;
     border-style: solid;
     border-width: thin;
