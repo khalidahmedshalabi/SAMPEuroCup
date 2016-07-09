@@ -9,6 +9,9 @@
 		<meta name="description" content="San Andreas Multiplayer Euro Cup">
 		<meta name="keywords" content="SAMP, Euro, Cup, KHK, AAD, Attack and defend, Tournament">
 
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+
 		<title>SA:MP Euro Cup</title>
 
 		<script src="js/jquery-2.2.1.min.js"></script>
@@ -25,6 +28,10 @@
 	</head>
 
 	<body>
+		<audio id="UEFAMusic">
+			<source src="audio/uefamusic.mp3"></source>
+		</audio>
+
 		<div class="header">
 			<div class="header_button button_matches">MATCHES</div>
 			<div class="header_button button_teams">TEAMS</div>
@@ -37,27 +44,234 @@
 
 		<section class="section_matches">
 			<div class="section_title">
-			    <p>Matches and results</p>
+			    <p>Matches and score</p>
 			</div>
 
-			<br>
-
-			<div class="section_content_box match_score_container">
-				<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-pl"></span>Poland (over)</div>
-				<div class="match_score match_score_team"> 6 - 3</div>
-				<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-pl"></span>Poland (Markus)</div>
+			<div class="section_matches_tab">
+				<div class="section_matches_tab_button button_qualification">QUALIFICATION</div>
+				<div class="section_matches_tab_button button_groups">GROUP STAGE</div>
+				<div class="section_matches_tab_button button_finals">FINALS</div>
 			</div>
 
-			<div class="section_content_box match_score_container">
-				<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-tr"></span>Turkey (progamer)</div>
-				<div class="match_score match_score_team"> 5 - 1</div>
-				<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-tr"></span>Turkey (CREATION)</div>
+			<br><br>
+			<div class="match_sub_section sub_section_qualification">
+				<div class="section_content_box match_score_container">
+					<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-pl"></span>Poland (over)</div>
+					<div class="match_score match_score_team"> 6 - 3</div>
+					<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-pl"></span>Poland (Markus)</div>
+				</div>
+
+				<div class="section_content_box match_score_container">
+					<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-tr"></span>Turkey (progamer)</div>
+					<div class="match_score match_score_team"> 5 - 1</div>
+					<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-tr"></span>Turkey (CREATION)</div>
+				</div>
+
+				<div class="section_content_box match_score_container">
+					<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-it"></span>Italy</div>
+					<div class="match_score match_score_team"> # - #</div>
+					<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-it"></span>Italy</div>
+				</div>
 			</div>
 
-			<div class="section_content_box match_score_container">
-				<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-it"></span>Italy</div>
-				<div class="match_score match_score_team"> # - #</div>
-				<div class="match_score_team"><span class="circular_flag flag-icon flag-icon-it"></span>Italy</div>
+			<div class="match_sub_section sub_section_groups">
+
+				<div class="group_box">
+					<div class="group_name">Group A</div>
+
+					<table class="group_table">
+						<tr>
+							<th colspan="2"></th>
+							<th>Points</th>
+							<th>Score</th>
+							<th>Played</th>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-pl"></i></td>
+							<td>Poland</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-it"></i></td>
+							<td>Italy</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-nl"></i></td>
+							<td>Netherlands</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+
+					<div class="group_matches">
+						<br>
+						<p class="group_matches_title">Group matches</p>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-pl"></i> Poland - Netherlands <i class="small_circular_flag flag-icon flag-icon-nl"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-it"></i> Italy - Poland <i class="small_circular_flag flag-icon flag-icon-pl"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-nl"></i> Netherlands - Italy <i class="small_circular_flag flag-icon flag-icon-it"></i></div>
+					</div>
+				</div>
+
+				<div class="group_box">
+					<div class="group_name">Group B</div>
+
+					<table class="group_table">
+						<tr>
+							<th colspan="2"></th>
+							<th>Points</th>
+							<th>Score</th>
+							<th>Played</th>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-gb"></i></td>
+							<td>United Kingdom</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-de"></i></td>
+							<td>Germany</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-by"></i></td>
+							<td>Belarus</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+
+					<div class="group_matches">
+						<br>
+						<p class="group_matches_title">Group matches</p>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-gb"></i> United Kingdom - Belarus <i class="small_circular_flag flag-icon flag-icon-by"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-by"></i> Belarus - Germany <i class="small_circular_flag flag-icon flag-icon-de"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-de"></i> Germany - United Kingdom <i class="small_circular_flag flag-icon flag-icon-gb"></i></div>
+					</div>
+				</div>
+
+				<div class="group_box">
+					<div class="group_name">Group C</div>
+
+					<table class="group_table">
+						<tr>
+							<th colspan="2"></th>
+							<th>Points</th>
+							<th>Score</th>
+							<th>Played</th>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-es"></i></td>
+							<td>Spain</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-ee"></i></td>
+							<td>Estonia</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-se"></i></td>
+							<td>Sweden</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+
+					<div class="group_matches">
+						<br>
+						<p class="group_matches_title">Group matches</p>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-es"></i> Spain - Estonia <i class="small_circular_flag flag-icon flag-icon-ee"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-ee"></i> Estonia - Sweden <i class="small_circular_flag flag-icon flag-icon-se"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-se"></i> Sweden - Spain <i class="small_circular_flag flag-icon flag-icon-es"></i></div>
+					</div>
+				</div>
+
+				<div class="group_box">
+					<div class="group_name">Group D</div>
+
+					<table class="group_table">
+						<tr>
+							<th colspan="2"></th>
+							<th>Points</th>
+							<th>Score</th>
+							<th>Played</th>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-ro"></i></td>
+							<td>Romania</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-tr"></i></td>
+							<td>Turkey</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><i class="small_circular_flag flag-icon flag-icon-ru"></i></td>
+							<td>Russia</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+
+					<div class="group_matches">
+						<br>
+						<p class="group_matches_title">Group matches</p>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-ro"></i> Romania - Turkey <i class="small_circular_flag flag-icon flag-icon-tr"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-ru"></i> Russia - Romania <i class="small_circular_flag flag-icon flag-icon-ro"></i></div>
+						<div class="group_match"><i class="small_circular_flag flag-icon flag-icon-tr"></i> Turkey - Russia <i class="small_circular_flag flag-icon flag-icon-ru"></i></div>
+					</div>
+				</div>
+
+				<div class="group_rules_box">
+					<h2>Group rules</h2>
+					After finishing all group stage matches, we qualify the top team of each group - the one with highest points - to the semi-finals.
+					<br><br>
+					If you win a match, you get one <b><i>point</i></b>. Your <b><i>score</i></b> is how many rounds you lose subtracted from how many rounds you win <b><i>(score = total rounds won - total rounds lost)</i></b>. <b><i>Score</i></b> is used ONLY if there are ties. For example, if team A and team B are equal in points after finishing all group matches, we qualify the team with more score. However, if scores are equal, they play a qualifying match.
+					<br><br>
+					Not following the deadlines will get you an instant loss. Play your match as soon as possible. <a class="match_discussion_button" href="http://www.infinite-gaming.ml/khk/index.php?board=47.0" target="_blank">See match discussion.</a>
+				</div>
+			</div>
+
+			<div class="match_sub_section sub_section_finals">
+				<div class="section_content_box match_score_container">
+					<h2>Semi-final</h2>
+					<div class="match_score_team"><span class="circular_flag unknown_flag">?</span>Top of GROUP A</div>
+					<div class="match_score match_score_team"> # - #</div>
+					<div class="match_score_team"><span class="circular_flag unknown_flag">?</span>Top of GROUP C</div>
+
+					<div class="match_score_team"><span class="circular_flag unknown_flag">?</span>Top of GROUP B</div>
+					<div class="match_score match_score_team"> # - #</div>
+					<div class="match_score_team"><span class="circular_flag unknown_flag">?</span>Top of GROUP D</div>
+				</div>
+
+				<div class="section_content_box match_score_container">
+					<h2>Final<br><br><i class="fa fa-trophy" style="color:yellow; font-size:250%;"></i></h2>
+					<div class="match_score_team"><span class="circular_flag unknown_flag">?</span>Semi-final winner</div>
+					<div class="match_score match_score_team"> # - #</div>
+					<div class="match_score_team"><span class="circular_flag unknown_flag">?</span>Semi-final winner</div>
+				</div>
 			</div>
 		</section>
 
@@ -273,5 +487,6 @@
 	</footer>
 
 	<script src="js/main.js"></script>
+	<script src="js/section_matches.js"></script>
 
 </html>

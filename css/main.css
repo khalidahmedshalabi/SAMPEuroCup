@@ -72,6 +72,7 @@ body
 
 footer
 {
+    float: right;
     text-align: center;
     color: #1593BD;
     height:auto;
@@ -104,6 +105,7 @@ footer
 
 .circular_flag
 {
+    color: white;
     background-color: black;
     text-align: center;
     border-radius: 50px;
@@ -119,6 +121,34 @@ footer
 .circular_flag:hover
 {
     border-color: white;
+}
+
+.small_circular_flag:hover
+{
+    border-color: white;
+}
+
+.small_circular_flag
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    width: 20px;
+    height: 15px;
+    font-size: 100%;
+    border-color: #AAAAAA;
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.unknown_flag
+{
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:15px;
+    padding-left:15px;
 }
 
 section
@@ -189,10 +219,53 @@ section
     margin:0.5%;
 }
 
+.section_matches_tab
+{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 130%;
+}
+
+.section_matches_tab_button
+{
+    background-color: #111111;
+    color: #EEEEEE;
+    border-bottom-style: solid;
+    border-bottom-width:thin;
+    border-bottom-color: white;
+    border-top-style: solid;
+    border-top-width:thin;
+    border-top-color: white;
+    cursor: pointer;
+    float: left;
+    width:33.333333333333%;
+    min-height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_matches_tab_button:hover
+{
+    animation-name: section_matches_tab_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes section_matches_tab_anim
+{
+    to
+    {
+        background-color: white;
+        color: #111111;
+    }
+}
+
 .match_score_container
 {
     text-align: center;
-    min-height: 100px;
 }
 
 .match_score
@@ -207,9 +280,104 @@ section
 
 .match_score_team
 {
-    float: left;
     width:32%;
     display: inline-block;
+}
+
+.group_box
+{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background-color: transparent;
+    float: left;
+    width: 25%;
+    cursor: default;
+}
+
+.group_box:hover
+{
+    animation-name: group_box_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes group_box_anim
+{
+    to
+    {
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3), 15px 15px 15px 15px rgba(0, 0, 0, 0.29);
+    }
+}
+
+.group_name
+{
+    font-weight: bolder;
+    border-bottom-style: solid;
+    border-bottom-color: #AAAAAA;
+    border-bottom-width: thin;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: #EEEEEE;
+}
+
+.group_table
+{
+    width: 100%;
+    color: white;
+
+    background: rgba(0,108,209,1);
+    background: -moz-linear-gradient(left, rgba(0,108,209,1) 0%, rgba(0,108,209,1) 54%, rgba(0,83,179,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,108,209,1)), color-stop(54%, rgba(0,108,209,1)), color-stop(100%, rgba(0,83,179,1)));
+    background: -webkit-linear-gradient(left, rgba(0,108,209,1) 0%, rgba(0,108,209,1) 54%, rgba(0,83,179,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,108,209,1) 0%, rgba(0,108,209,1) 54%, rgba(0,83,179,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,108,209,1) 0%, rgba(0,108,209,1) 54%, rgba(0,83,179,1) 100%);
+    background: linear-gradient(to right, rgba(0,108,209,1) 0%, rgba(0,108,209,1) 54%, rgba(0,83,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006cd1', endColorstr='#0053b3', GradientType=1 );
+}
+
+.group_matches_title
+{
+    text-align: left;
+    margin:3%;
+    color: #109DCC;
+}
+
+.group_matches
+{
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #1593BD;
+}
+
+.group_match
+{
+    border-top-style: solid;
+    border-top-color: #AAAAAA;
+    border-top-width: thin;
+    width:80%;
+    display: inline-block;
+    margin-bottom:5%;
+    margin-top:5%;
+}
+
+.group_rules_box
+{
+    font-family: 'Noto Sans', sans-serif;
+    float: right;
+    margin:3%;
+    width:90%;
+    background-color: white;
+    padding:2%;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3), 0 6px 5px 5px rgba(0, 0, 0, 0.29);
+    border-style: solid;
+    border-width: thin;
+    border-color: #1593BD;
 }
 
 .section_video
@@ -222,4 +390,9 @@ section
     margin:2%;
     height: 378px;
     width: 80%;
+}
+
+.match_discussion_button
+{
+    color: #109DCC;
 }

@@ -41,4 +41,4 @@ $(".button_video").click(function(event) {
 });
 
 
-$(".button_video").trigger('click');
+$(".button_matches").trigger('click');
