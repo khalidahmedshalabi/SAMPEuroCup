@@ -92,6 +92,7 @@ footer
 
 #disqus_thread
 {
+    background-color: #111111;
     display:block;
 	text-align:center;
     font-family: 'Noto Sans', sans-serif;
