@@ -28,6 +28,7 @@ $(".button_teams").click(function(event) {
 $(".button_stats").click(function(event) {
 
 	ShowSection(".section_stats");
+	location.href = "http://stats.sampcup.com";
 });
 
 $(".button_fans").click(function(event) {
