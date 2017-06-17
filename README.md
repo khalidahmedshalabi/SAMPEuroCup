@@ -1,3 +1,3 @@
 # SAMPEuroCup
 San Andreas Multiplayer Euro Cup Website
-https://khkkhalid.github.io/SAMPEuroCup/
+https://khalidahmedshalabi.github.io/SAMPEuroCup/
